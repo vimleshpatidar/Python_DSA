@@ -10,3 +10,12 @@ for i in l:
 
 print(dupli)
 
+dic = {}
+
+for j in l:
+    dic[j] = dic.get(j,0) + 1
+
+for k,v in dic.items():
+    if v > 1:
+        print(k, "is duplicate")
+
